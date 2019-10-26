@@ -48,6 +48,11 @@ Aprendiendo:
 
 		hotfix         l
 
+	Atajo más importante: Esc + shift + zz
+	
+
+
+
 
 
 
