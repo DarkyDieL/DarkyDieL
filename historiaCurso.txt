@@ -49,9 +49,9 @@ Aprendiendo:
 		hotfix         l
 
 	Atajo más importante: Esc + shift + zz
-	
 
 
+Este archivo se va a conservar pero quedará desactualizado.
 
 
 
