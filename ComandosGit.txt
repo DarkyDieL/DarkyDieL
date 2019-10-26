@@ -1,0 +1,33 @@
+Directorios:
+    pwd #Muestra la ruta actual.
+    mkdir [nombre] #Crea una carpeta.
+    touch [nombre.extención] #crea un archivo vacio.
+    cd #Cambia a la carpeta HOME.
+    cd / #Cambia al directorio raiz.
+    cd [dir] #movernos entre Directorios.
+    cd . #Carpeta actual.
+    cd .. #carpeta anterior.
+    ls #Lista de archivos.
+    ls -a #Todos los archivo incluso los ocultos.
+    ls -al #Todos los archivos en una lista incluso los ocultos.
+    cat [archivo] #Muestra rápidamente el contenido del archivo (pd: no se como salir)
+
+Comandos y atajos de teclado:
+    clear #Limpia la consola
+    Ctrl + l #""""
+    history #Muestra el historial de comandos usados.
+    ![num] #Selecciona un comando del historial, por su número en la lista, y lo ejecuta.
+    rm [archivo] #Remueve un archivo.
+    -- #Indica palabra.
+    [comando] --help #Muestra la ayuda del comando seleccionado.
+
+    tab #Autocompletar
+
+
+
+Crear un repositorio con git:
+
+    git init #Lo crea en la posición actual.
+    git status #Usarlo siempre antes de un add o un commit para averiguar el estado de los archivos.
+    git add #Agregar a STAGING / Rastrear archivos.
+    git commit -m "[texto descriptivo del commit]" #Enviar los archivos al repositorio cuando ya esté seguro de los cambios.
