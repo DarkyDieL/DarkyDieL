@@ -10,7 +10,7 @@ Directorios:
     ls #Lista de archivos.
     ls -a #Todos los archivo incluso los ocultos.
     ls -al #Todos los archivos en una lista incluso los ocultos.
-    cat [archivo] #Muestra rápidamente el contenido del archivo (pd: no se como salir)
+    cat [archivo] #Muestra rápidamente el contenido del archivo (pd: no se como salir) con la letra "q".
 
 Comandos y atajos de teclado:
     clear #Limpia la consola
@@ -33,8 +33,12 @@ Crear un repositorio con git:
 
 Trabajar con repositorios:
     git log #Nos muertra el historial de commits.
+    git log --stat #Historial detallado. Salimos con letra "q".
     git reset [version] --[hard/soft] #volver en el tiempo.
+    git reset HEAD #Quitamos los archivos aderidos al STAGING.
     git diff [null] #Compara los cambios entre el STAGING y el directorio.
-    
+    git checkout [serialcommit] [archivo.extensión] #Nos muestra/cambia el archivo al estado de ese commit.
+    git checkout master [archivo.extensión] #Nos devuelve el ultimo commit de la rama master.
+
 
 
