@@ -20,6 +20,7 @@ Comandos y atajos de teclado:
     rm [archivo] #Remueve un archivo.
     -- #Indica palabra.
     [comando] --help #Muestra la ayuda del comando seleccionado.
+    alias [nombre] "[comando]" #Aliases.
 
     tab #Autocompletar
 
@@ -33,8 +34,7 @@ Crear un repositorio con git:
     git commit -am "[texto descriptivo del commit]" #[git add + git commit] solo funciona con archivos agregados previamente.
 
 Trabajar con repositorios:
-    git log #Nos muertra el historial de commits.
-    git log --stat #Historial detallado. Salimos con letra "q".
+    
     git reset [version] --[hard/soft] #volver en el tiempo.
     git reset HEAD #Quitamos los archivos aderidos al STAGING.
     git diff [null] #Compara los cambios entre el STAGING y el directorio.
@@ -54,7 +54,17 @@ Trabajar con repositorios:
     git remote add origin [url] #Aderir un repositorio remoto.
     git remote set-url origin [url] #Cambiamos la url.
     
-
+Trabajando con el LOG:
+    git log #Nos muertra el historial de commits.
+    git log --stat #Historial detallado. Salimos con letra "q".
+    git log --all #Muestra todo el log.
+    git log --graph #Muestra un grafico de ramas.
+    git log --graph --decorate --oneline #Muestra un grafico de ramas, bonito y más legible.
+    git tag -a [version] -m"[nota]" [commit id] #Agregamos un tag.
+    git tag #Muestra los tag disponibles.
+    git show-red --tag #A que commit está asignado cada tag.
+    git push origin --tags #Enviamos los tags al repositorio remoto.
+    
 Llaves SSH:
     ssh-keygen -t [algoritmo] -b [num que tan compleja] -C [email al que estara conectada] #Generamos una llave.
     eval $(ssh-agent -s) #Nos fijamos si las llaves estan corriendo.
