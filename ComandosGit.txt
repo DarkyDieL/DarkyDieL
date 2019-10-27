@@ -26,8 +26,15 @@ Comandos y atajos de teclado:
 
 
 Crear un repositorio con git:
-
     git init #Lo crea en la posición actual.
     git status #Usarlo siempre antes de un add o un commit para averiguar el estado de los archivos.
     git add #Agregar a STAGING / Rastrear archivos.
     git commit -m "[texto descriptivo del commit]" #Enviar los archivos al repositorio cuando ya esté seguro de los cambios.
+
+Trabajar con repositorios:
+    git log #Nos muertra el historial de commits.
+    git reset [version] --[hard/soft] #volver en el tiempo.
+    git diff [null] #Compara los cambios entre el STAGING y el directorio.
+    
+
+

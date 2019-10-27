@@ -1,0 +1,22 @@
+Etiquetas:
+    <html></html> #Toda la página va dentro de esta etiqueta.
+    <head></head> #Es el encabezado de mi página.
+    <body></body> #Es el cuerpo.
+
+Head:
+    <title></title> #Esto no es visible. esto va en el heder de nuestro navegador. 
+    <link rel="stylesheet" href="css/estilos.css" /> #Agregamos una hoja y donde está.
+
+Body:
+    <h1></h1> # [null]
+    <p></p> #delimita un párrafo.
+
+
+
+
+
+
+
+
+
+
