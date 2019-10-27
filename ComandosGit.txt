@@ -29,7 +29,7 @@ Crear un repositorio con git:
     git init #Lo crea en la posición actual.
     git status #Usarlo siempre antes de un add o un commit para averiguar el estado de los archivos.
     git add #Agregar a STAGING / Rastrear archivos.
-    git commit -m "[texto descriptivo del commit]" #Enviar los archivos al repositorio cuando ya esté seguro de los cambios.
+    git commit -m "[texto descriptivo del commit]" #Enviar los archivos al repositorio local cuando ya esté seguro de los cambios.
 
 Trabajar con repositorios:
     git log #Nos muertra el historial de commits.
@@ -39,6 +39,11 @@ Trabajar con repositorios:
     git diff [null] #Compara los cambios entre el STAGING y el directorio.
     git checkout [serialcommit] [archivo.extensión] #Nos muestra/cambia el archivo al estado de ese commit.
     git checkout master [archivo.extensión] #Nos devuelve el ultimo commit de la rama master.
-
+    git clone url #Trae del repositorio online los archivos y los vuelca en el repositorio local y en el directorio de trabajo.
+    git push #envia los archivos al repositorio remoto.
+    git fetch #Trae los archivos del repositorio remoto al local.
+    git merge #Trae los archivos de mi repositorio local a mi directorio.
+    git pull #Es igual a fetch+merge.
+    
 
 
