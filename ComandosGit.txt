@@ -50,6 +50,8 @@ Trabajar con repositorios:
     git show #Me muestras los cambios agregados recientemente y nos muestra donde está el HEAD.
     git branch [nombre de la nueva rama] #Crea una rama a partir del HEAD.
     ###git branch -b [nombre] #Crea y comienza a trabajar en esta nueva rama. Mueve el HEAD.
+    git remote add origin [url] #Aderir un repositorio remoto.
+    
 
 
 
