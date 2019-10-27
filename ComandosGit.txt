@@ -40,12 +40,17 @@ Trabajar con repositorios:
     git diff [null] #Compara los cambios entre el STAGING y el directorio.
     git checkout [serialcommit] [archivo.extensión] #Nos muestra/cambia el archivo al estado de ese commit.
     git checkout master [archivo.extensión] #Nos devuelve el ultimo commit de la rama master.
+    git checkout [nombre de la rama objetivo] #Movernos entre ramas.
     git clone url #Trae del repositorio online los archivos y los vuelca en el repositorio local y en el directorio de trabajo.
     git push #envia los archivos al repositorio remoto.
     git fetch #Trae los archivos del repositorio remoto al local.
     git merge #Trae los archivos de mi repositorio local a mi directorio.
     git pull #Es igual a fetch+merge.
     git branch #Muestra las ramas.
+    git show #Me muestras los cambios agregados recientemente y nos muestra donde está el HEAD.
+    git branch [nombre de la nueva rama] #Crea una rama a partir del HEAD.
+    ###git branch -b [nombre] #Crea y comienza a trabajar en esta nueva rama. Mueve el HEAD.
+
 
 
  #HEAD = commit más reciente.
