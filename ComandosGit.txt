@@ -44,6 +44,9 @@ Trabajar con repositorios:
     git fetch #Trae los archivos del repositorio remoto al local.
     git merge #Trae los archivos de mi repositorio local a mi directorio.
     git pull #Es igual a fetch+merge.
+
+    
+ #HEAD = commit más reciente.
     
 
 
