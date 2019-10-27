@@ -30,6 +30,7 @@ Crear un repositorio con git:
     git status #Usarlo siempre antes de un add o un commit para averiguar el estado de los archivos.
     git add #Agregar a STAGING / Rastrear archivos.
     git commit -m "[texto descriptivo del commit]" #Enviar los archivos al repositorio local cuando ya esté seguro de los cambios.
+    git commit -am "[texto descriptivo del commit]" #[git add + git commit] solo funciona con archivos agregados previamente.
 
 Trabajar con repositorios:
     git log #Nos muertra el historial de commits.
@@ -45,7 +46,7 @@ Trabajar con repositorios:
     git merge #Trae los archivos de mi repositorio local a mi directorio.
     git pull #Es igual a fetch+merge.
 
-    
+
  #HEAD = commit más reciente.
     
 
