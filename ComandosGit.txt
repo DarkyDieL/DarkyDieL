@@ -52,7 +52,13 @@ Trabajar con repositorios:
     git branch [nombre de la nueva rama] #Crea una rama a partir del HEAD.
     ###git branch -b [nombre] #Crea y comienza a trabajar en esta nueva rama. Mueve el HEAD.
     git remote add origin [url] #Aderir un repositorio remoto.
+    git remote set-url origin [url] #Cambiamos la url.
+    
 
+Llaves SSH:
+    ssh-keygen -t [algoritmo] -b [num que tan compleja] -C [email al que estara conectada] #Generamos una llave.
+    eval $(ssh-agent -s) #Nos fijamos si las llaves estan corriendo.
+    ssh-add ~/.ssh/id_rsa #Agregamos la llave privada.
 
 
 
