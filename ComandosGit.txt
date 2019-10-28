@@ -1,34 +1,83 @@
 Directorios:
-    pwd #Muestra la ruta actual.
-    mkdir [nombre] #Crea una carpeta.
-    touch [nombre.extención] #crea un archivo vacio.
-    cd #Cambia a la carpeta HOME.
-    cd / #Cambia al directorio raiz.
-    cd [dir] #movernos entre Directorios.
-    cd . #Carpeta actual.
-    cd .. #carpeta anterior.
-    ls #Lista de archivos.
-    ls -a #Todos los archivo incluso los ocultos.
-    ls -al #Todos los archivos en una lista incluso los ocultos.
-    cat [archivo] #Muestra rápidamente el contenido del archivo (pd: no se como salir) con la letra "q".
+    pwd 
+        #Muestra la ruta actual.
+
+    mkdir [nombre] 
+        #Crea una carpeta.
+
+    touch [nombre.extención] 
+        #crea un archivo vacio.
+
+    cd 
+        #Cambia a la carpeta HOME.
+
+    cd / 
+        #Cambia al directorio raiz.
+
+    cd [dir] 
+        #movernos entre Directorios.
+
+    cd . 
+        #Carpeta actual.
+
+    cd .. 
+        #carpeta anterior.
+
+    ls 
+        #Lista de archivos.
+
+    ls -a 
+        #Todos los archivo incluso los ocultos.
+
+    ls -al 
+        #Todos los archivos en una lista incluso los ocultos.
+
+    cat [archivo] 
+        #Muestra rápidamente el contenido del archivo (pd: no se como salir) con la letra "q".
+
 
 Comandos y atajos de teclado:
-    clear #Limpia la consola
-    Ctrl + l #""""
-    history #Muestra el historial de comandos usados.
-    ![num] #Selecciona un comando del historial, por su número en la lista, y lo ejecuta.
-    rm [archivo] #Remueve un archivo.
-    -- #Indica palabra.
-    [comando] --help #Muestra la ayuda del comando seleccionado.
-    alias [nombre]="[comando]" #Aliases.
-    git config --global alias.[alias] "[comando]" #Alias interno en git.
-    git blame [archivo al que quiero ver la culpa] #Muestra las culpas n_n .
-        -c #Mejor identado.
-        [archivo] -L[num],[num] #Muestra solo esas lineas.
-    git [comando] --help #Ayuda.
+    clear 
+        #Limpia la consola.
 
-    tab #Autocompletar
+    Ctrl + l 
+        #"""".
 
+    history 
+        #Muestra el historial de comandos usados.
+
+    ![num] 
+        #Selecciona un comando del historial, por su número en la lista, y lo ejecuta.
+
+    rm [archivo] 
+        #Remueve un archivo.
+
+    -- 
+        #Indica palabra.
+
+    [comando] --help 
+        #Muestra la ayuda del comando seleccionado.
+
+    alias [nombre]="[comando]"
+        #Aliases.
+
+    git config --global alias.[alias] "[comando]" 
+        #Alias interno en git.
+
+    git blame [archivo al que quiero ver la culpa] 
+        #Muestra las culpas n_n .
+
+    #### -c 
+        #Mejor identado.
+
+    [archivo] -L[num],[num] 
+        #Muestra solo esas lineas.
+
+    git [comando] --help 
+        #Ayuda.
+
+    tab 
+        #Autocompletar
 
 
 Crear un repositorio con git:
