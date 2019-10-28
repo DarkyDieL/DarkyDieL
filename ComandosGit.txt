@@ -20,7 +20,7 @@ Comandos y atajos de teclado:
     rm [archivo] #Remueve un archivo.
     -- #Indica palabra.
     [comando] --help #Muestra la ayuda del comando seleccionado.
-    alias [nombre] "[comando]" #Aliases.
+    alias [nombre]="[comando]" #Aliases.
 
     tab #Autocompletar
 
@@ -51,6 +51,8 @@ Trabajar con repositorios:
     git show #Me muestras los cambios agregados recientemente y nos muestra donde está el HEAD.
     git branch [nombre de la nueva rama] #Crea una rama a partir del HEAD.
     ###git branch -b [nombre] #Crea y comienza a trabajar en esta nueva rama. Mueve el HEAD.
+    git show-branch --all #Historial detallado de ramas.
+    gitk #Muestra un historial visual.
     git remote add origin [url] #Aderir un repositorio remoto.
     git remote set-url origin [url] #Cambiamos la url.
     
@@ -64,7 +66,9 @@ Trabajando con el LOG:
     git tag #Muestra los tag disponibles.
     git show-red --tag #A que commit está asignado cada tag.
     git push origin --tags #Enviamos los tags al repositorio remoto.
-    
+    git tag -d [nombre] #borrar tag. No lo borra del repositorio remoto
+    git push origin :refs/tags/[nombre] #Borra la referencia del tag.
+
 Llaves SSH:
     ssh-keygen -t [algoritmo] -b [num que tan compleja] -C [email al que estara conectada] #Generamos una llave.
     eval $(ssh-agent -s) #Nos fijamos si las llaves estan corriendo.
