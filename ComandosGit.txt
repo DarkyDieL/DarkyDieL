@@ -55,7 +55,9 @@ Trabajar con repositorios:
     gitk #Muestra un historial visual.
     git remote add origin [url] #Aderir un repositorio remoto.
     git remote set-url origin [url] #Cambiamos la url.
-
+    git rebase [master (desde la rama a fundir)] #Usar solo en el repositorio local. Integra la rama cambiando la historia del repo.
+    git rebase [rama a fucionar (desde master)] #Respetar el orden de los dos comandos. Peligro!!
+    
 Trabajando con el LOG:
     git log #Nos muertra el historial de commits.
     git log --stat #Historial detallado. Salimos con letra "q".
