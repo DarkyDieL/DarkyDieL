@@ -55,7 +55,7 @@ Trabajar con repositorios:
     gitk #Muestra un historial visual.
     git remote add origin [url] #Aderir un repositorio remoto.
     git remote set-url origin [url] #Cambiamos la url.
-    
+
 Trabajando con el LOG:
     git log #Nos muertra el historial de commits.
     git log --stat #Historial detallado. Salimos con letra "q".
@@ -68,6 +68,10 @@ Trabajando con el LOG:
     git push origin --tags #Enviamos los tags al repositorio remoto.
     git tag -d [nombre] #borrar tag. No lo borra del repositorio remoto
     git push origin :refs/tags/[nombre] #Borra la referencia del tag.
+
+gitignore:
+    #creamos un archivo en la raiz lammado [.gitignore]
+
 
 Llaves SSH:
     ssh-keygen -t [algoritmo] -b [num que tan compleja] -C [email al que estara conectada] #Generamos una llave.
