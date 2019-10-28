@@ -84,6 +84,11 @@ Trabajando con el LOG:
     git grep -n [palabra] #Muestra en que linea esta dicha palabra.
         -c #Contar palabras
     git log -S "[palabra]" #Busca la palabra en los commits.
+    git short log #Nos muestra un log por persona.
+        -sn #Lista y conteo.
+        -sn --all #Los cuenta todos, incluso ocultos.
+        -sn --all --no-merges #Omitir merges.
+    
 
 gitignore:
     #creamos un archivo en la raiz lammado [.gitignore]
