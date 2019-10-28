@@ -57,6 +57,13 @@ Trabajar con repositorios:
     git remote set-url origin [url] #Cambiamos la url.
     git rebase [master (desde la rama a fundir)] #Usar solo en el repositorio local. Integra la rama cambiando la historia del repo.
     git rebase [rama a fucionar (desde master)] #Respetar el orden de los dos comandos. Peligro!!
+    git stash #Guardamos en una caché antes de guardar/commitear.
+    git stash list #Lista.
+    git stash pop #Abrir el stash que tenía.
+    git stash branch [nombre] #Conbertir el stash a rama.
+    git stash drop #Borrar stash.
+    git clean --dry-run #Ejecucion en seco del comando git clean. Simula lo que va a borrar sin borrarlo.
+    git clean -f #Forzar borrado. No borra carpetas ni ignores.
     
 Trabajando con el LOG:
     git log #Nos muertra el historial de commits.
