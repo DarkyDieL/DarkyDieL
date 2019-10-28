@@ -21,6 +21,11 @@ Comandos y atajos de teclado:
     -- #Indica palabra.
     [comando] --help #Muestra la ayuda del comando seleccionado.
     alias [nombre]="[comando]" #Aliases.
+    git config --global alias.[alias] "[comando]" #Alias interno en git.
+    git blame [archivo al que quiero ver la culpa] #Muestra las culpas n_n .
+        -c #Mejor identado.
+        [archivo] -L[num],[num] #Muestra solo esas lineas.
+    git [comando] --help #Ayuda.
 
     tab #Autocompletar
 
@@ -49,6 +54,8 @@ Trabajar con repositorios:
     git pull origin master #Es igual a fetch+merge.
     git pull origin master --allow-unrelated-histories #Forzamos la funsión de historias no relacionadas.
     git branch #Muestra las ramas.
+        -r #Muestra las ramas remotas.
+        -a #Muestra las locales y remotas.
     git show #Me muestras los cambios agregados recientemente y nos muestra donde está el HEAD.
     git branch [nombre de la nueva rama] #Crea una rama a partir del HEAD.
     ###git branch -b [nombre] #Crea y comienza a trabajar en esta nueva rama. Mueve el HEAD.
