@@ -32,10 +32,11 @@ Crear un repositorio con git:
     git add #Agregar a STAGING / Rastrear archivos.
     git commit -m "[texto descriptivo del commit]" #Enviar los archivos al repositorio local cuando ya esté seguro de los cambios.
     git commit -am "[texto descriptivo del commit]" #[git add + git commit] solo funciona con archivos agregados previamente.
-
+    git commit --amend #pegar cambios al ultimo commi.
+    
 Trabajar con repositorios:
     
-    git reset [version] --[hard/soft] #volver en el tiempo.
+    git reset --[hard/soft] [commit id] #volver en el tiempo. Soft mantiene staging lo que hayas dado add.
     git reset HEAD #Quitamos los archivos aderidos al STAGING.
     git diff [null] #Compara los cambios entre el STAGING y el directorio.
     git checkout [serialcommit] [archivo.extensión] #Nos muestra/cambia el archivo al estado de ese commit.
@@ -64,7 +65,8 @@ Trabajar con repositorios:
     git stash drop #Borrar stash.
     git clean --dry-run #Ejecucion en seco del comando git clean. Simula lo que va a borrar sin borrarlo.
     git clean -f #Forzar borrado. No borra carpetas ni ignores.
-    
+    git cherry-pick [commit id]#Cuando necesitamos un avance de nuestra rama en master. Desde master ejecutar el comando.
+
 Trabajando con el LOG:
     git log #Nos muertra el historial de commits.
     git log --stat #Historial detallado. Salimos con letra "q".
@@ -77,6 +79,11 @@ Trabajando con el LOG:
     git push origin --tags #Enviamos los tags al repositorio remoto.
     git tag -d [nombre] #borrar tag. No lo borra del repositorio remoto
     git push origin :refs/tags/[nombre] #Borra la referencia del tag.
+    git reflog #Nos muestra todo.
+    git grep [palabra] #buscamos palabras "claves".
+    git grep -n [palabra] #Muestra en que linea esta dicha palabra.
+        -c #Contar palabras
+    git log -S "[palabra]" #Busca la palabra en los commits.
 
 gitignore:
     #creamos un archivo en la raiz lammado [.gitignore]
