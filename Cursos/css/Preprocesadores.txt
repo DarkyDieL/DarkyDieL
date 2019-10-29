@@ -1,0 +1,4 @@
+	Nos permite escribir pseudocodigo que luego se convertirá a CSS o HTML
+	Nos permiten agregar variable, funsiones, mixins? que no son nativas de CSS y HTML cosas de leguajes más potentes como JavaScript
+
+//no queremos que nuestra página tenga más de 3 colores porque no queremos que sea un desproposito en forma de arcoiris.

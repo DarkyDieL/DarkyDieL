@@ -1,0 +1,204 @@
+	El navegador va leyendo de arriba hacia abajo y le das más prioridad a los valores repetidos que están más abajo.
+
+	Sintaxis.
+selector: A que elemento de html quiero darle estilo ej: h1
+declaración: Es la parte donde agregamos o cambiamos el estilo al objeto seleccionado ej: {color:blue;}
+ej: h1{color:red;}
+La declaración a su ves tiene dos partes:
+La propiedad; color, y el valor; red.
+Un selector puede tener infinidad de propiedades y valores.
+
+	Selectores:
+Selector universal [*]
+ej {
+	margin: 0;
+	padding: 0;
+}
+
+Selector de etiqueta o de elemento. En este vamos declarando el elemento al que le queremos dar estilos.
+
+p{
+	color:blue;
+}
+
+h1,h2,h3,h4,h5{
+	font-family:Arial,Helvetica;
+	color:black;
+}
+
+Selector anidado. Un elemento tiene que estar adentro de otro elemento. ej:
+
+HTML
+<body>
+<span>Soy color negro</span>
+<p><span>Soy rojo</span></p>
+</body>
+
+CSS
+span{
+	color:black;
+}
+p span{
+	color:red;
+}
+
+//A todos los span ponle color negro pero a los que están dentro de un párrafo ponlos en rojo.
+
+Selector de ID.Se manda a llamar con [#]
+
+HTML
+<body>
+<p>Soy color azul</p>
+<p id="verde">Soy verde</p>
+</body>
+
+CSS
+p{
+	color:blue;
+}
+#verde{
+	color:green;
+}
+
+//Lo utilizamos especificamente. en este ejemplo todos los párrafos son de color azul excepto el seleccionado con el ID verde.
+
+//El problema con ID es que no se puede reusar.
+
+Selector de clase. Un selector ID repetible.
+
+HTML
+<body>
+<p>Soy color azul</p>
+<p class="verde">Soy verde</p>
+</body>
+
+CSS
+p{
+	color:blue;
+}
+.verde{
+	color:green;
+}
+
+//Se lo llama con [.]
+
+Selector de hijos.parecido al anidado pero funciona distinto. [>]
+
+HTML
+<body>
+<p><span>Soy color rojo</span></p>
+<p><div>Soy verde</div></p>
+</body>
+
+CSS
+p > span{
+	color:red;
+}
+span{
+	color:green;
+}
+
+//si un elemento span es hijo directo de un p que sea rojo. los demas seran verdes.
+
+Selector adyacente. Parecido al selector hijos. La regla es que el elemento tiene que estar seguido del otro elemento
+
+HTML
+<body>
+<h2>Soy color negro</h2>
+<h2>Soy rojo</h2>
+</body>
+
+CSS
+h2{
+	color:black;
+}
+h2+h2 {
+	color:red;
+}
+
+Selector de atributos. Ideal para formularios? Mandamos a llamar al elemento seguido der atributo que tiene asignado ese elemento.
+
+HTML
+<body>
+<imput type="number">
+<imput typt="email">
+</body>
+
+CSS
+imput[type='number']{
+	border:black;
+}
+imput[type='email']{
+	border:red;
+}
+
+//Ahhorrando dolores de cabeza//Cómo un navegador determina la prioridad CSS. A cada tipo de selector le da una prioridad diferente.
+
+ID=100
+Clase=10
+Etiqueta=1
+
+//estos valores son acumulables. Regla: no usar IDs.
+
+HTML
+<body>
+<h2><span>Soy color negro</span></h2>
+<h2 class="especial"><span>Soy especial</span></h2>
+<h2 id="superespecial"><span>Soy superespecial</span></h2>
+</body>
+
+CSS
+span{
+	color:black;
+}==1
+
+h2.especial span{
+	color:red;
+}==12
+
+h2#superespecial span{
+	color:red;
+}==102
+
+/////////ejemplos de prioridades
+
+CSS
+
+h2.especial span{
+	color:red;
+}
+
+.especial span{
+	color:black;
+}
+
+//a cual le dará mas valor.. será rojo. aunque el ultimo elemento en la cascada es negro el rojo tiene mas peso.
+
+!important=1000000
+
+CSS
+
+span{
+	color:black !important;
+}
+
+//este no es un selector. es para decidir el valor. por si no tenemos acceso al codigo fuente y queremos forzar el cambio
+
+//regla: no usar salvo que sea la última opsion.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

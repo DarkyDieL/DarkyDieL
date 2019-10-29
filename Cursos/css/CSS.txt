@@ -1,8 +1,0 @@
-body
-{
-    #Agregamos estilos a body
-}
-
-color: [value]; #Cambiamos el color del texto.
-text-align: [value]; #Alinear el texto.
-font-family: ["value"] #Asignar la fuente.
