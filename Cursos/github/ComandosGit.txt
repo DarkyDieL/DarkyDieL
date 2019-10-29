@@ -1,0 +1,155 @@
+Directorios:
+    pwd         #Muestra la ruta actual.
+    mkdir [nombre]         #Crea una carpeta.
+    touch [nombre.extención]         #crea un archivo vacio.
+    cd         #Cambia a la carpeta HOME.
+    cd /         #Cambia al directorio raiz.
+    cd [dir]         #movernos entre Directorios.
+    cd .         #Carpeta actual.
+    cd ..         #carpeta anterior.
+    ls         #Lista de archivos.
+    ls -a         #Todos los archivo incluso los ocultos.
+    ls -al         #Todos los archivos en una lista incluso los ocultos.
+    cat [archivo]
+             #Muestra rápidamente el contenido del archivo (pd: no se como salir) con la letra "q".
+
+
+Comandos y atajos de teclado:
+    clear         #Limpia la consola.
+    Ctrl + l         #"""".
+    history         #Muestra el historial de comandos usados.
+    ![num]         #Selecciona un comando del historial, por su número en la lista, y lo ejecuta.
+    rm [archivo]         #Remueve un archivo.
+    --         #Indica palabra.
+    [comando] --help         #Muestra la ayuda del comando seleccionado.
+    alias [nombre]="[comando]"        #Aliases.
+    git config --global alias.[alias] "[comando]"         #Alias interno en git.
+    git blame [archivo al que quiero ver la culpa]         #Muestra las culpas n_n .
+    #### -c         #Mejor identado.
+    [archivo] -L[num],[num]         #Muestra solo esas lineas.
+    git [comando] --help         #Ayuda.
+    tab         #Autocompletar
+
+
+Crear un repositorio con git:
+    git init #Lo crea en la posición actual.
+
+    git status #Usarlo siempre antes de un add o un commit para averiguar el estado de los archivos.
+
+    git add #Agregar a STAGING / Rastrear archivos.
+
+    git commit -m "[texto descriptivo del commit]" 
+            #Enviar los archivos al repositorio local cuando ya esté seguro de los cambios.
+    #### -am "[texto descriptivo del commit]"
+             #[git add + git commit] solo funciona con archivos agregados previamente.
+    #### --amend #pegar cambios al ultimo commi.
+
+    
+Trabajar con repositorios:
+    
+    git reset --[hard/soft] [commit id]
+             #volver en el tiempo. Soft mantiene staging lo que hayas dado add.
+
+    git reset HEAD #Quitamos los archivos aderidos al STAGING.
+
+    git diff [null] #Compara los cambios entre el STAGING y el directorio.
+
+    git checkout [serialcommit] [archivo.extensión] 
+            #Nos muestra/cambia el archivo al estado de ese commit.
+
+    git checkout master [archivo.extensión] #Nos devuelve el ultimo commit de la rama master.
+
+    git checkout [nombre de la rama objetivo] #Movernos entre ramas.
+
+    git clone url #Trae del repositorio online los archivos y los vuelca
+              en el repositorio local y en el directorio de trabajo.
+
+    git push #envia los archivos al repositorio remoto.
+
+    git fetch #Trae los archivos del repositorio remoto al local.
+
+    git merge #Trae los archivos de mi repositorio local a mi directorio.
+
+    git pull origin master #Es igual a fetch+merge.
+
+    git pull origin master --allow-unrelated-histories 
+            #Forzamos la funsión de historias no relacionadas.
+
+    git branch #Muestra las ramas.
+    #### -r #Muestra las ramas remotas.
+    #### -a #Muestra las locales y remotas.
+
+    git show 
+            #Me muestras los cambios agregados recientemente y nos muestra donde está el HEAD.
+
+    git branch [nombre de la nueva rama] #Crea una rama a partir del HEAD.
+    #### show-branch --all #Historial detallado de ramas.
+
+    gitk #Muestra un historial visual.
+
+    git remote add origin [url] #Aderir un repositorio remoto.
+
+    git remote set-url origin [url] #Cambiamos la url.
+
+    git rebase [master (desde la rama a fundir)]
+             #Usar solo en el repositorio local. Integra la rama cambiando la historia del repo.
+
+    git rebase [rama a fucionar (desde master)]
+             #Respetar el orden de los dos comandos. Peligro!!.
+
+    git stash         #Guardamos en una caché antes de guardar/commitear.
+    #### list         #Lista.
+    #### pop         #Abrir el stash que tenía.
+    #### branch [nombre]         #Conbertir el stash a rama.
+    #### drop         #Borrar stash.
+
+    git clean --dry-run
+             #Ejecucion en seco del comando git clean. Simula lo que va a borrar sin borrarlo.
+    #### -f         #Forzar borrado. No borra carpetas ni ignores.
+
+    git cherry-pick [commit id]
+            #Cuando necesitamos un avance de nuestra rama en master. Desde master ejecutar el comando.
+
+
+Trabajando con el LOG:
+    git tag         #Muestra los tag disponibles.
+    #### -a [version] -m"[nota]" [commit id]         #Agregamos un tag.
+
+    git show-red --tag         #A que commit está asignado cada tag.
+    git push origin --tags         #Enviamos los tags al repositorio remoto.
+    git tag -d [nombre]         #borrar tag. No lo borra del repositorio remoto.
+    git push origin :refs/tags/[nombre]         #Borra la referencia del tag.
+    git reflog         #Nos muestra todo.
+
+    git grep [palabra]         #buscamos palabras "claves".
+    #### -n [palabra]         #Muestra en que linea esta dicha palabra.
+    #### -c         #Contar palabras.
+
+    git log         #Nos muertra el historial de commits.
+    #### -S "[palabra]"         #Busca la palabra en los commits.
+    #### --stat         #Historial detallado. Salimos con letra "q".
+    #### --all         #Muestra todo el log.
+    #### --graph         #Muestra un grafico de ramas.
+    #### --graph --decorate --oneline
+             #Muestra un grafico de ramas, bonito y más legible.
+
+    git short log         #Nos muestra un log por persona.
+    #### -sn         #Lista y conteo.
+    #### -sn --all         #Los cuenta todos, incluso ocultos.
+    #### -sn --all --no-merges         #Omitir merges.
+
+gitignore:
+    #creamos un archivo en la raiz lammado [.gitignore]
+
+
+Llaves SSH:
+    ssh-keygen -t [algoritmo] -b [num que tan compleja] -C [email al que estara conectada] 
+        #Generamos una llave.
+    eval $(ssh-agent -s)         #Nos fijamos si las llaves estan corriendo.
+    ssh-add ~/.ssh/id_rsa         #Agregamos la llave privada.
+
+
+#HEAD = commit más reciente.
+    
+
+
