@@ -2,8 +2,9 @@ body
 {
     color: black;
     text-align: center;
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    
 }
 
 header
@@ -14,7 +15,7 @@ header
     margin: 0px;
     font-size: 28px;
     text-align: left;
-    padding: 0.5em;
+    padding: 0em;
     box-shadow: 0px 5px 20px 0px rgba(0,0,0,5);
 }
 
@@ -23,7 +24,6 @@ header
     color: black;
     background: white;
     font-size: 24px;
-    border: darkcyan;
 }
 
 .arriba
@@ -31,16 +31,42 @@ header
     background: black;
     color: white;
     font-weight: bold;
-    padding: 0.5em;
-    border: darkcyan;
+    padding: 0.0em;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 5px 50px;
 }
 
+.arriba-link
+{
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+
+.menu
+{
+    /*background: darkblue;*/
+    color: rgb(64, 146, 167);
+    padding: 0em;
+    margin: 0px;
+
+}
+
+.columna
+{
+    padding: 5%;
+    margin: 5%;
+}
 .portada
 {
-    background: darkblue;
-    color: white;
+    /*background: darkblue;*/
+    color: rgb(64, 146, 167);
     padding: 0.5em;
-    border: darkcyan;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 5px;
+    margin-bottom: 25px;
 }
 
 .objetivos
@@ -48,7 +74,9 @@ header
     background: darkblue;
     color: white;
     padding: 0.5em;
-    border: darkcyan;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 5px;
 }
 
 .portafolio
@@ -56,7 +84,9 @@ header
     background: darkblue;
     color: white;
     padding: 0.5em;
-    border: darkcyan;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 5px;
 }
 
 .experiencia
@@ -64,7 +94,9 @@ header
     background: darkblue;
     color: white;
     padding: 0.5em;
-    border: darkcyan;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 5px;
 }
 
 .contacto
@@ -72,7 +104,9 @@ header
     background: darkblue;
     color: white;
     padding: 0.5em;
-    border: darkcyan;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 5px;
 }
 
 .pie
@@ -82,7 +116,8 @@ header
     font-weight: bold;
     margin: 0px;
     font-size: 28px;
-    text-align: left;
-    padding: 0.5em;
+    text-align: center;
+    padding: 1em;
+    padding-bottom: 10em;
     box-shadow: 0px 5px 20px 0px rgba(0,0,0,5);
 }
