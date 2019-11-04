@@ -9,8 +9,8 @@
 <body>
     <header>
         <figure class="logo">
-            <img src="images/logo.png" width="75" height="75" alt="Logo de https://darkydiel.github.io">
-            <p>DarkyDieL</p>
+            <img class="logo-imagen" src="images/logo.png" alt="Logo de https://darkydiel.github.io">
+            <p class="logo-titulo">DarkyDieL</p>
         </figure>        
         <nav class="menu">
             <ol>
@@ -27,76 +27,97 @@
         </nav>
     </header>
         <div class="columna">
-        <section class="portada">
-            <h1>
-                Bienvenido a mi <strong>página personal</strong> <br> donde practicaré <strong>HTML</strong> <br> y podrás saber más sobre mi.
-            </h1>
-            <img/> imagen de portada
-        </section>
-        <section class="objetivos">
+            <section class="portada">
+                <h1 class="portada-titulo">
+                    Bienvenido a mi <strong>página personal</strong> <br> donde practicaré <strong>HTML</strong> <br> y podrás saber más sobre mi.
+                </h1>
+                <img/> imagen de portada
+            </section>
             <h2>Objetivos</h2>
-            <article>
-                <h3>Cumpliré mis metas?</h3>
-                <p><small><strong>Conocimientos previos: [java básico] [programación en PseInt]</strong></small></p>
-                <p><small><strong>Por aprender u objetivos a aprender:[git/hub] [html5] [css] [javascript]</strong></small></p>
-                <p><small><strong>Aprendiendo: [git] [html] [html5] [css] [javascript]</strong></small></p>
-                <p><small><strong>Practicando: [git] [html]</strong></small></p>
-            </article>
-        </section>
-        <div class="arriba">
-            <a class="arriba-link" href="#">------Arriba</a>
-        </div>
-        <section class="portafolio">
+            <section class="objetivos">
+                <article>
+                    <h3>Cumpliré mis metas?</h3>
+                    <p><small>(Notas)</small></p>
+                    <p>Poder crear proyectos personales en HTML usando CSS y JavaScript. Entre estos están de momento: <br>
+                        Mi página personal; Una hoja de rol editable; Expandir el sistema de rol a un servidor, separando entre [Usuarios-Masters] y [Usuarios-Jugadores]</p>
+                    <p>Crear un portafolio junto con un contacto profecional.</p>
+                    <p><small><strong> Conocimientos previos: </strong> [java básico] [programación en PseInt]</small></p>
+                    <p><small><strong> Por aprender: </strong> [git/hub] [html5] [css] [javascript]</small></p>
+                    <p><small><strong> Aprendiendo: </strong> [git] [html] [html5] [javascript]</small></p>
+                    <p><small><strong> Practicando: </strong> [git] [html] [css] </small></p>
+                </article>
+            </section>
+            <div class="arriba">
+                <a class="arriba-link" href="#">Arriba</a>
+            </div>
             <h2>Portafolio (Proyectos destacados)</h2>
-            <article>
-                <h3>Esta misma página por ahora</h3>
-                <p><small><strong>Fecha inicio:</strong> xx/10/19</small></p>
-                <p><small><strong>Puedes verlo en:</strong>https://darkydiel.github.io</small></p>
-                <p><strong>Página personal:</strong>Todabía en construcción, 
-                    Este es mi primer proyecto el cual usaré para aprender lo básico. 
-                    Mi idea es Preparar otro para lo intermedio y uno más para desarroyar conseptos avanzados de frontend</p>
-            </article>
-        </section>
-        <div class="arriba">
-            <a class="arriba-link" href="#">------Arriba</a>
-        </div>
-        <section class="experiencia">
+            <section class="portafolio">
+                <article>
+                    <h3>Esta misma página por ahora</h3>
+                    <p><small><strong>Fecha inicio:</strong> xx/10/19</small></p>
+                    <p><small><strong>Puedes verlo en:</strong> <a class="link-texto" href="https://darkydiel.github.io"> click aqui </a></small></p>
+                    <p><strong>Página personal:</strong>Todabía en construcción, 
+                        Este es mi primer proyecto el cual usaré para aprender lo básico. 
+                        Mi idea es Preparar otro para lo intermedio y uno más para desarroyar conseptos avanzados de frontend (Hoja de rol editable). 
+                        Luego intentaré trastear con servidores para aprender a crear usuarios y bases de datos.</p>
+                </article>
+            </section>
+            <div class="arriba">
+                <a class="arriba-link" href="#">Arriba</a>
+            </div>
             <h2>Experiencia</h2>
-            <article>
-                <figure>
-                    <img/>
-                </figure>
-                <h3>Curso aprobado de git y github</h3>
-                <p>El curso me tomó unos 4 días de estudio y otros 3 de práctica para rendirlo correctamente. Quedá seguir practicando y revisar lo aprendido cada un tiempo x que decidiré pronto</p>
-                <p><small><strong>Estado:</strong>Completado</small></p>
-                <p><small><strong>Nota:</strong>9,33</small></p>
-            </article>
-            <article>
-                <figure>
-                    <img/>
-                </figure>
-                <h3>Curso de desarrollo web online</h3>
-                <p><small><strong>Estado:</strong>Curzando</small></p>
-            </article>
-        </section>
-        <div class="arriba">
-            <a class="arriba-link" href="#">------Arriba</a>
-        </div>
-        <section class="contacto">
+            <section class="experiencia">
+                <h3 class="experiencia-div-titulo">Cursos</h3>
+                <div class="experiencia-cuerpo">
+                    <article class="experiencia-cursos">
+                        <figure class="experiencia-imagenes">
+                            <img/> Imagen del curso git y github
+                        </figure>
+                        <h3>Git y GitHub</h3>
+                        <p class="experiencia-descripción"> El curso me tomó unos 4 días de estudio y
+                            otros 3 de práctica para rendirlo correctamente. Queda seguir practicando
+                            y revisar lo aprendido cada un tiempo x que decidiré pronto</p>
+                        <p><small><strong>Estado:</strong>Completado</small></p>
+                        <p><small><strong>Nota:</strong>9,33</small></p>
+                    </article>
+                    <article class="experiencia-cursos">
+                        <figure class="experiencia-imagenes">
+                            <img/> Imagen del curso desarrollo web
+                        </figure>
+                        <h3>Desarrollo web online</h3>
+                        <p class="experiencia-descripción"> DESCRIPCIÓN </p>
+                        <p><small><strong>Estado:</strong>Curzando</small></p>
+                    </article>
+                    <article class="experiencia-cursos">
+                        <figure class="experiencia-imagenes">
+                            <img/> Imagen del curso r
+                        </figure>
+                        <h3>Curso de respon</h3>
+                        <p class="experiencia-descripción"> DESCRIPCIÓN </p>
+                        <p><small><strong>Estado:</strong>Sin iniciar</small></p>
+                    </article>
+                </div>
+            </section>
+            <div class="arriba">
+                <a class="arriba-link" href="#">Arriba</a>
+            </div>
             <h2>Contacto</h2>
-            <form action="/mails/">
-                <h3>Nada de emails n_n</h3>
-                <label for="email">Déjame tu email:</label>
-                <input type="text" placeholder="Déjame tu email" value="Aun en construcción">
-                <input type="submit" value="Texto del botón">
-                <button>Enviar</button>
-            </form>
-        </section>
-        <div class="arriba">
-            <a class="arriba-link" href="#">------Arriba</a>
-        </div> 
+            <section class="contacto">
+                <form action="/mails/">
+                    <h3>Nada de emails n_n</h3>
+                    <label for="email">Déjame tu email:</label>
+                    <input type="text" placeholder="Déjame tu email" value="Aun en construcción">
+                    <input type="submit" value="Texto del botón">
+                    <button>Enviar</button>
+                </form>
+            </section>
+            <div class="arriba">
+                <a class="arriba-link" href="#">Arriba</a>
+            </div> 
         </div>
     
-    <footer class="pie">Pie de página</footer>    
+    <footer class="pie">
+        Pie de página
+    </footer>    
 </body>
 </html>

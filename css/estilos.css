@@ -5,7 +5,6 @@ body
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     margin: 0px;
-    
 }
 
 header
@@ -16,21 +15,35 @@ header
     margin: 0px;
     font-size: 28px;
     text-align: left;
-    padding: 10px;
-    height: 75;
+    padding: 2px;
+    height: 60;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 5px 20px 0px rgba(0,0,0,5);
 }
 
-.logo{
+.logo
+{
     margin: 0px;
     margin-left: 10px;
     display: flex;
 }
 
-.menu{
+.logo-imagen
+{
+    block-size: 50px;
+    align-self: center;
+}
+
+.logo-titulo
+{
+    margin-left: 10px;
+    align-self: center;
+}
+
+.menu
+{
     /*background: darkblue;*/
     color: rgb(64, 146, 167);
     padding: 0em;
@@ -41,18 +54,21 @@ header
 }
 
 ol,
-li{
+li
+{
     list-style: none;
     margin: 0px;
     padding: 0px;
     height: 1em;
 }
 
-header ol{
+header ol
+{
     display: flex;
 }
 
-.linkinterno{
+.linkinterno
+{
     color: white;
     background: black;
     font-size: 16px;
@@ -61,73 +77,160 @@ header ol{
     padding: 0px 10px;
 }
 
-.arriba{
-    background: black;
-    color: white;
-    font-weight: bold;
-    padding: 0.0em;
-    border: 1px solid black;
-    border-radius: 15px;
-    margin: 5px 50px;
-}
-
-.arriba-link{
-    background: black;
-    color: white;
-    font-weight: bold;
-}
-
-.columna{
+.columna
+{
     padding: 5%;
-    margin: 5%;
+    padding-top: 0px;
+    margin: 0px 5%;
 }
-.portada{
-    /*background: darkblue;*/
-    color: rgb(64, 146, 167);
+
+.portada
+{
+    background: grey;
+    color: white;
     padding: 0.5em;
-    border: 1px solid black;
-    border-radius: 15px;
+    border: 1px solid white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: none;
     margin: 5px;
     margin-bottom: 25px;
 }
 
-.objetivos{
+.portada-titulo
+{
+    font-size: 28px;
+}
+
+h2
+{
+    text-align: left;
+    background: black;
+    border: 1px solid white;
+    border-radius: 15px ;
+    color: white;
+    block-size: 1em;
+    padding: 1em;
+
+}
+
+.objetivos
+{
     background: darkblue;
     color: white;
     padding: 0.5em;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 15px;
     margin: 5px;
 }
 
-.portafolio{
+.link-texto
+{
+    color: white;
+}
+
+.arriba
+{
+    display: flex;
+    block-size: 50px;
+    background: grey;
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 5px
+}
+
+.arriba-link
+{
+    margin: auto 0 auto auto;
+    display: block;
+    text-decoration: none;
+    padding-top: 5px;
+    width: 100px;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+
+
+.columna
+{
+    border: 1px solid black;
+    background: grey;
+}
+
+
+.portafolio
+{
     background: darkblue;
     color: white;
     padding: 0.5em;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 15px;
     margin: 5px;
 }
 
-.experiencia{
+.experiencia
+{
     background: darkblue;
     color: white;
     padding: 0.5em;
-    border: 1px solid black;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 5px;
+    
+}
+
+.experiencia h3
+{
+    /* border: 1px solid red; */
+    padding: 0px;
+}
+
+.experienci-div-titulo
+{
+    font-size: 24px;
+}
+
+.experiencia-cuerpo
+{
+    padding: 10px;
+    display: flex;
+}
+
+.experiencia-cursos
+{
+    /* border:1px solid red; */
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 15px;
+    background: grey;
+    margin: 3px;
+    width: 250px;
+}
+
+.experiencia-imagenes
+{
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
+
+.contacto
+{
+    background: darkblue;
+    color: white;
+    padding: 0.5em;
+    border: 1px solid white;
     border-radius: 15px;
     margin: 5px;
 }
 
-.contacto{
-    background: darkblue;
-    color: white;
-    padding: 0.5em;
-    border: 1px solid black;
-    border-radius: 15px;
-    margin: 5px;
-}
-
-.pie{
+.pie
+{
     background: black;
     color: white;
     font-weight: bold;
