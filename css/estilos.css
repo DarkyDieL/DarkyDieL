@@ -23,12 +23,19 @@ Header, .portada{
     justify-content: space-between;
 }
 
+body{
+    background-color: #acdbdf;
+}
+
 header{
     padding: 5px;
+    background-color: #010101;
+    color: white;
 }
 
 .portada{
     padding: 10px;
+    background-color: #69779b;
 }
 
 .portada__textos{
@@ -51,6 +58,10 @@ header{
     margin: 0 5%;
 }
 
+.principal{
+    background-color: #f0ece2; 
+}
+
 .principal, .contenido{
     flex-wrap: wrap;
     justify-content: space-around;
@@ -60,20 +71,56 @@ header{
 
 .contenedor__datos, .indicadores{
     width: 350px;
+    
 }
 
 .contenedor__datos, .datos{
     /* padding: 2px; */
 }
 
+.contenedor__datos{
+    background-color: #010101;
+    color: white;
+}
+
+.datos{
+    background-color: #f0ece2;
+    color: black; 
+}
+
+.indicadores{
+    background-color: #010101;
+    color: white;
+    margin-top: 5px;
+}
+
+.indicador__cursos, .indicador__proyectos--en_curso,
+ .indicador__proyectos--pendientes, .indicador__proyectos--terminados{
+    background-color: #f0ece2;
+    color: black;
+}
+
+.contenedor_de_contenido{
+    /* background-color: #010101;
+    color: white; */
+}
+
+.division{
+    background-color: #010101;
+    color: white;
+    height: 30px;
+    text-align: initial;
+    padding: 20px;
+}
 .contenido{
-    /* overflow: scroll; */
+    background-color: #f0ece2;
 }
 
 .caja{
     width: 300px;
     margin: 2px;
     padding: 3px;
+    color: black;
 }
 
 .caja__flex{
@@ -86,5 +133,8 @@ header{
 
 footer{
     height: 300px;
+    background-color: #010101;
+    color: white;
+
 }
 
